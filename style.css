@@ -1,0 +1,435 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--background-color: #1a1a1a;
+	--card-color: #2c2c2c;
+	--text-color: #e0e0e0;
+	--header-color: #ffffff;
+	--accent-color: #00bfff;
+	--accent-color-hover: #009acd;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: 'Manrope', sans-serif;
+	margin: 0;
+	line-height: 1.6;
+}
+
+.container,
+.navbar,
+section {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 600;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	font-size: 1.6rem;
+}
+
+.navbar ion-icon {
+	font-size: 2rem;
+}
+
+.cta-btn {
+	font-size: 1rem;
+	background-color: var(--background-color);
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--card-color);
+	border-radius: 1rem;
+	text-decoration: none;
+	transition: 0.3s;
+
+	cursor: pointer;
+}
+
+.cta-btn:hover {
+	border: 1px solid #999;
+	transform: translateY(-2px);
+}
+
+/* ROJECTS CARD */
+.hero {
+	margin-top: 1rem;
+	padding: 30px 0;
+}
+
+.hero-content {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.text {
+	grid-column: 1/4;
+	text-align: start;
+	width: 100%;
+}
+
+.photo {
+	grid-column: 4/6;
+	width: 100%;
+}
+
+.photo img {
+	width: 100%;
+	height: auto;
+	border-radius: 1rem;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--header-color);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	font-size: 3.6rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.hero h2 {
+	margin: 0;
+}
+
+.hero p {
+	font-size: 1.6rem;
+	margin-top: 2.4rem;
+	letter-spacing: 0.7px;
+}
+
+.project-card p {
+	font-size: 1.6rem;
+	margin-top: 1rem;
+	letter-spacing: 0.2px;
+}
+
+/* PROJECTS CARD */
+
+.projects {
+	margin-top: 2rem;
+	padding: 0;
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+@media (max-width: 768px) {
+	.hero-content,
+	.projects-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.project-card {
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	
+	height: 20rem;
+	padding: 3rem 1rem;
+	border-radius: 15px;
+	border: 1px solid #444;
+	/* transition: transform 0.3s ease, border-color 0.3s ease; */
+
+	box-shadow: 0rem 1.2rem 3.2rem rgba(0, 0, 0, 0.01);
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+.project-01 {
+	background-image: url(img/EverBloom-card.jpeg);
+	background-size: cover;
+}
+.project-02 {
+	background-image: url(img/Guess-the-Number.jpeg);
+	background-size: cover;
+}
+.project-03 {
+	background-image: url(img/NeonRoll-1.jpeg);
+	background-size: cover;
+}
+.project-04 {
+	background-image: url(img/3fed3a18-a085-4741-b0bf-ad7c1372a0d7.jpg);
+	background-size: cover;
+}
+.project-05 {
+	/* background-image: url(img/3fed3a18-a085-4741-b0bf-ad7c1372a0d7.jpg); */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.727), rgba(173, 21, 21, 0.219)), url(img/3fed3a18-a085-4741-b0bf-ad7c1372a0d7.jpg);
+background-position: 0% 50%;
+	background-size: cover;
+}
+
+.project-card:hover {
+	transform: translateY(-2px);
+	border-color: #ffffff44;
+}
+
+.blur {
+	filter: blur(1px); 
+}
+
+h3 {
+	font-size: 1.8rem;
+	margin-bottom: 5px;
+}
+
+.project-card p {
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+.project-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+}
+
+.project-links a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	background-color: #fff;
+	width: 8rem;
+	border-radius: 2rem;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 1.1px;
+	margin-top: 5px;
+	padding: 1px 5px;
+	transition: 0.3s;
+}
+
+.project-links a:hover {
+	border: 1px solid #000;
+
+	transform: translateY(-2px);
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.contact-skills {
+	margin-top: 20px;
+	display: flex;
+	gap: 5rem;
+	padding: 40px 0;
+}
+
+.contact {
+	width: 50%;
+	padding: 0;
+	text-align: left;
+}
+
+.skills {
+	width: 50%;
+	padding: 0;
+	letter-spacing: 1.1px;
+}
+.skills ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.skills li {
+	padding: 10px 15px;
+	border-radius: 15px;
+	border: 1px solid #444;
+}
+
+.logo-item {
+	width: 45px;
+	object-fit: cover;
+}
+
+.logo-item img {
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.contact {
+	letter-spacing: 1.1px;
+}
+
+.contact-button {
+	display: inline-block;
+	background-color: #fff;
+	color: #000;
+	padding: 12px 25px;
+	border-radius: 1rem;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 15px;
+	/* transition: background-color 0.3s ease; */
+	letter-spacing: 1.1px;
+
+	transition: 0.3s;
+}
+
+.contact-button:hover {
+	transform: translateY(-2px);
+}
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 30px;
+	border-top: 1px solid #444;
+	font-size: 0.9em;
+	color: #888;
+}
+
+/* <768px */
+@media (max-width: 768px) {
+	.hero-content,
+	.projects-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.text,
+	.photo {
+		grid-column: auto;
+		text-align: center;
+	}
+
+	.logo {
+		font-size: 1.4rem;
+		justify-content: center;
+	}
+
+	.navbar {
+		flex-direction: column;
+		gap: 1rem;
+		text-align: center;
+	}
+
+	.contact-skills {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.contact,
+	.skills {
+		width: 100%;
+		text-align: center;
+	}
+
+	.skills ul {
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: center;
+	}
+}
+
+/* <480px */
+@media (max-width: 480px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+
+	h3 {
+		font-size: 1.4rem;
+	}
+
+	.hero p,
+	.project-card p {
+		font-size: 1.4rem;
+	}
+
+	.project-links a {
+		width: 100%;
+	}
+
+	.cta-btn {
+		font-size: 1.2rem;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
+
+@media (min-width: 1200px) {
+  .hero-content {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+
+  .container {
+    padding: 4rem;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  .project-card {
+    height: 25rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-content,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text {
+    grid-column: 1/2;
+  }
+
+  .photo {
+    grid-column: 2/3;
+  }
+}
