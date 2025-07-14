@@ -207,80 +207,6 @@ main:hover {
   }
 }
 
-/* @media <1024px*/
-@media (max-width: 1024px) {
-  main {
-    width: 90rem;
-    height: 55rem;
-  }
-
-  .player {
-    padding: 6rem;
-  }
-
-  .name {
-    font-size: 3.6rem;
-  }
-
-  .score {
-    font-size: 7rem;
-  }
-
-  .current {
-    width: 80%;
-    padding: 2rem;
-  }
-
-  .current-score {
-    font-size: 3.2rem;
-  }
-
-  .btn {
-    font-size: 1.7rem;
-    padding: 0.8rem 2.5rem;
-  }
-
-  .dice {
-    height: 8.5rem;
-    top: 15rem;
-  }
-}
-
-/* @media <768px*/
-
-/* @media <480px*/
-@media (max-width: 480px) {
-  html {
-    font-size: 55%;
-  }
-
-  .name {
-    font-size: 3rem;
-  }
-
-  .score {
-    font-size: 5rem;
-  }
-
-  .current-label {
-    font-size: 1.5rem;
-  }
-
-  .current-score {
-    font-size: 3rem;
-  }
-
-  .btn {
-    font-size: 1.5rem;
-    padding: 0.6rem 2rem;
-  }
-
-  .dice {
-    height: 6rem;
-  }
-}
-
-
 /* @media <1024px */
 
 @media (max-width: 1024px) {
@@ -320,11 +246,14 @@ main:hover {
     top: 15rem;
   }
 }
-
 /* @media <768px */
 @media (max-width: 768px) {
   html {
     font-size: 55%;
+  }
+
+  body {
+    align-items: flex-start;
   }
   main {
     flex-direction: column;
@@ -338,8 +267,12 @@ main:hover {
   }
 
   .player {
-    padding: 4rem 2rem;
+    height: 50%;
     width: 100%;
+  }
+
+  .current {
+    height: 50%;
   }
 
   .score {
@@ -376,10 +309,6 @@ main:hover {
 
 /* @media <480px */
 @media (max-width: 480px) {
-  html {
-    font-size: 55%;
-  }
-
   .score {
     font-size: 5rem;
   }
@@ -389,7 +318,7 @@ main:hover {
   }
 
   .current-score {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   .btn {
