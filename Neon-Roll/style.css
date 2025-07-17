@@ -258,8 +258,12 @@ main:hover {
   main {
     flex-direction: column;
     width: 90%;
-    height: auto;
+    height: 90vh;
     padding: 2rem 0;
+  }
+
+  main:hover {
+    transform: none;
   }
 
   .name {
@@ -286,12 +290,12 @@ main:hover {
 
   .btn--roll {
     top: unset;
-    bottom: 10rem;
+    bottom: 3.5rem;
   }
 
   .btn--hold {
     top: unset;
-    bottom: 4rem;
+    bottom: 9rem;
   }
 
   .btn {
@@ -302,7 +306,7 @@ main:hover {
   }
 
   .dice {
-    top: 10rem;
+    top: 45%;
     height: 7rem;
   }
 }
