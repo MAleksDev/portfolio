@@ -13,6 +13,12 @@
 	--accent-color-hover: #009acd;
 }
 
+html, body {
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+}
+
+
 html {
 	font-size: 62.5%;
 }
