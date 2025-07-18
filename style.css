@@ -13,10 +13,7 @@
 	--accent-color-hover: #009acd;
 }
 
-html, body {
-  touch-action: manipulation;
-  -ms-touch-action: manipulation;
-}
+
 
 
 html {
